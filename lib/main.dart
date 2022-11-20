@@ -49,13 +49,18 @@ class MyApp extends StatelessWidget {
     }
   }
 }
-
 class SomiMall extends StatelessWidget {
   const SomiMall({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      theme: ThemeData(
+        primarySwatch: Colors.orange,
+        fontFamily: 'DoHyeon',
+        hintColor: Colors.grey[300],
+        textTheme: TextTheme(button: TextStyle(color: Colors.white))
+      ),
       routeInformationParser: BeamerParser(),
       routerDelegate: _routerDelegate,
     );
