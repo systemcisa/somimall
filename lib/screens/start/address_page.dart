@@ -13,11 +13,19 @@ class AddreesPage extends StatelessWidget {
             decoration: InputDecoration(
                 prefixIcon: Icon(
                     Icons.search),
+<<<<<<< HEAD
                 hintText: '로그인',
                 hintStyle: TextStyle(color: Theme.of(context).hintColor),
                 border: UnderlineInputBorder(borderSide: BorderSide(color: Colors.grey),),
 
                 prefixIconConstraints:
+=======
+              hintText: '도로명으로 검색',
+              hintStyle: TextStyle(color: Theme.of(context).hintColor),
+              border: UnderlineInputBorder(borderSide: BorderSide(color: Colors.grey),),
+
+              prefixIconConstraints:
+>>>>>>> origin/main
                 BoxConstraints(minWidth: 24, minHeight: 24)
             ),
           )
@@ -25,4 +33,8 @@ class AddreesPage extends StatelessWidget {
       ),
     );
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main

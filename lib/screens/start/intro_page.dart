@@ -2,8 +2,7 @@ import 'package:extended_image/extended_image.dart';
 import 'package:flutter/material.dart';
 
 class IntroPage extends StatelessWidget {
-  PageController controller;
-  IntroPage(this.controller,{Key? key}) : super(key: key);
+  const IntroPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,17 +11,17 @@ class IntroPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           SizedBox(height: 18,),
-          Text('SWU Domitory', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.redAccent),),
-          ExtendedImage.asset('assets/imgs/SAM_0161.jpg'),
+          Text('somi mall', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.redAccent),),
+          ExtendedImage.asset('assets/imgs/happy.jpg'),
           SizedBox(height: 18,),
-          Text('서울여자대학교 기숙사입니다'),
-          Text('기숙사 광고 및 시설물 유지 보수 위한 앱니다~'),
+          Text('소미야 서준이랑 우리 행복하자'),
+          Text('어려움 있어도 우리 이기고 잘 살자~'),
           SizedBox(height: 18,),
           TextButton(onPressed: (){
-            controller.animateToPage(1, duration: Duration(milliseconds: 500), curve: Curves.ease);
+
           },
               child:
-              Text('로그인하고 앱 시작하기', style: TextStyle(color: Colors.white),),
+              Text('동대문 사입 시작하기', style: TextStyle(color: Colors.white),),
               style: TextButton.styleFrom(backgroundColor: Colors.blueAccent,),
           )
 
